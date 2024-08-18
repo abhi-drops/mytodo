@@ -1,0 +1,37 @@
+.workspace{
+
+  margin-left: 16.666667%;
+  min-width: 83.333333%;
+}
+
+@media not all and (min-width: 640px) {
+  .workspace{
+    margin-left: 0;
+    min-width: 100%;
+   position: static;
+
+  }
+}
+
+
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 200ms, transform 200ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 200ms, transform 200ms ease-out;
+}
